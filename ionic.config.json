@@ -1,0 +1,7 @@
+{
+  "name": "eve",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
