@@ -1,0 +1,124 @@
+.icon-input {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 1rem;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: .75rem;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 300;
+    ion-icon {
+        color: #00000054;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        padding-right: 1rem;
+    }
+    input {
+        border: 0px;
+        width: calc(100% - 20px);
+        &:focus {
+        outline: none;
+        }
+        &::placeholder{
+        color: #00000054;
+        }
+    }
+}
+
+ion-content {
+    --background: #121115;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    * {
+        width: calc(100% / 3);
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    color: white;
+    display: flex;
+    padding: 1rem;
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+    img {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    div {
+        width: calc(100% - 6rem);
+        padding: 1rem;
+        span {
+            transform: translateY(-25%);
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        span:first-child {
+            font-weight: bold;
+        }
+    }
+    .icon {
+        height: 2rem;
+        width: 2rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+}
+
+.playing {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #121115;
+    box-shadow: 0px -5px 7px 0px #0000004f;
+    .item {
+        padding-top: .5rem;
+        padding-bottom: 0;
+    }
+    .item:last-child {
+        margin-bottom: 0px;
+    }
+    .player {
+        width: 100%;
+        background: #ffffff88;
+        height: 1px;
+    }
+    .player-progress {
+        width: 50%;
+        height: 2px;
+        background: linear-gradient(90deg, #B143FC 0%, #5DA5F1 198.07%);
+        transform: translateY(-75%);
+    }
+}
+
+.musicModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    background: white;
+    transition: .5s ease;
+}
